@@ -61,6 +61,7 @@ winner = predict_winner(
     toss_won="MI",
     decision="BOWL FIRST",
     venue_name="Wankhede Stadium, Mumbai",
+
     # These values are always 0 before match starts
     home_runs=0,
     away_runs=0,
@@ -72,4 +73,7 @@ print("Predicted Winner:", winner)
 ```
 
 ## Output
-![Prediction Result](Images/Image 1.png)
+
+<p align="center">
+  <img src="Images/Image 1.png" width="1000"/>
+</p>
