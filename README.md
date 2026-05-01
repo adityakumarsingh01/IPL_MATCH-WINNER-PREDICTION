@@ -92,6 +92,7 @@ This is formulated as a **classification problem**, where the output is the pred
 
 - 📧 [Email](mailto:adityasingh81201@gmail.com)
 - 🔗 [LinkedIn](https://www.linkedin.com/in/aditya-kumar-singh-990377291/?skipRedirect=true)
+- 📁 [Portfolio](https://adityasingh81201.wixsite.com/professional-portfol)
 
 ---
 
