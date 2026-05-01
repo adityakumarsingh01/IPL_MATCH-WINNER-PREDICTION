@@ -1,79 +1,98 @@
-# 🏏 IPL Match Winner Prediction using Machine Learning
+# 🏏 IPL Match Winner Prediction (2008–2023)
 
-This project is a Machine Learning based system that predicts the **winner of an IPL match** using historical match data and real-time match inputs such as teams, toss result, venue, and current match statistics.
-
-It demonstrates how data-driven models can be applied to sports analytics and highlights real-world challenges in building reliable ML systems.
+A Machine Learning project that predicts the winner of an IPL match using historical data and advanced analytics. This project combines **Exploratory Data Analysis (EDA)**, **feature engineering**, **Random Forest modeling**, and an **interactive Power BI dashboard** to deliver meaningful insights and predictions.
 
 ---
 
-## 📌 Features
+## 🚀 Project Overview
 
-- Predicts the winning team for any IPL match  
-- Takes user inputs such as:  
-  - Home Team  
-  - Away Team  
-  - Toss Winner  
-  - Decision (Bat / Field)  
-  - Venue  
-  - Runs & Wickets of both teams  
-- Uses Label Encoding for categorical features  
-- Trained using Scikit-learn classifiers  
-- Applies logical validation to ensure the predicted team is one of the playing teams  
+The goal of this project is to build a predictive model that can determine the likely winner of an IPL match based on key match conditions such as:
+
+- Teams playing
+- Toss winner & decision
+- Venue
+- Match statistics (runs, wickets, etc.)
+
+This is formulated as a **classification problem**, where the output is the predicted winning team.
 
 ---
 
-## 🧠 Problem Solved
+## 📊 Dashboard Preview
 
-Initially, the model sometimes predicted a team that was **not even part of the match**  
-(e.g., predicting MI for a SRH vs PBKS match).
-
-This project fixes that issue by adding a **post-processing validation layer** that restricts the final output to only the two competing teams.
+![Power BI Dashboard](assets/dashboard.png)
 
 ---
 
-## 🛠️ Technologies Used
+## 🔍 Key Features
 
-- Python  
-- Pandas  
-- NumPy  
-- Scikit-learn  
-- Matplotlib / Seaborn  
-
----
-
-## 🔁 Project Workflow
-
-1. Data Cleaning & Preprocessing  
-2. Label Encoding of categorical variables  
-3. Train-Test Split  
-4. Model Training  
-5. Winner Prediction Function  
-6. Logical Validation of Output  
+- ✅ Cleaned and processed IPL dataset (2008–2023)
+- ✅ Handled missing values and removed irrelevant columns
+- ✅ Performed in-depth **EDA** to extract meaningful insights
+- ✅ Applied **IQR method** for outlier handling
+- ✅ Encoded categorical features using Label Encoding
+- ✅ Built a **Random Forest Classifier**
+- ✅ Achieved ~**70% accuracy**
+- ✅ Developed a **prediction function** for real-time use
+- ✅ Created an **interactive Power BI dashboard**
 
 ---
 
-## 📂 Example Usage
+## 💡 Key Insights
 
-```python
-winner = predict_winner(
-    home_team="MI",
-    away_team="CSK",
-    toss_won="MI",
-    decision="BOWL FIRST",
-    venue_name="Wankhede Stadium, Mumbai",
+- 🏆 Teams like **MI** and **CSK** consistently dominate
+- 🏟️ **Venue** plays a significant role in match outcomes
+- 🎯 Toss provides a slight advantage (~52%) but is not decisive
+- 📈 Average match scores range between **150–180 runs**
 
-    # These values are always 0 before match starts
-    home_runs=0,
-    away_runs=0,
-    home_wickets=0,
-    away_wickets=0
-)
+---
 
-print("Predicted Winner:", winner)
-```
+## 🛠️ Tech Stack
 
-## Output
+- **Programming:** Python  
+- **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn  
+- **Visualization:** Power BI  
+- **Environment:** Jupyter Notebook  
 
-<p align="center">
-  <img src="Images/Image 1.png" width="1000"/>
-</p>
+---
+
+## 📈 Model Performance
+
+- **Algorithm:** Random Forest Classifier  
+- **Accuracy:** ~70%  
+- **Evaluation Metrics:**
+  - Confusion Matrix  
+  - Precision, Recall, F1-score  
+
+---
+
+## ⚠️ Limitations
+
+- Does not consider **player form or injuries**
+- No **weather or pitch condition data**
+- Predictions are based only on historical match data
+
+---
+
+## 🔮 Future Scope
+
+- 🔹 Integrate **player-level statistics**
+- 🔹 Use **real-time data APIs**
+- 🔹 Implement **deep learning models**
+- 🔹 Deploy as a **web application**
+
+---
+
+## 🔗 Project Links
+
+- 📊 [Power BI Dashboard](https://lpuin-my.sharepoint.com/:u:/g/personal/aditya_singh237_lpu_in/IQAnhNJPD2ikTomvmr7pKWSXAYF_K0dWD6zaDMnnaWo4LLA?e=875Q66] )
+
+---
+
+## 🤝 Connect With Me
+
+- 📧 [Email](mailto:adityasingh81201@gmail.com)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/aditya-kumar-singh-990377291/?skipRedirect=true)
+
+---
+
+## ⭐ If you found this project useful, consider giving it a star!
